@@ -10,6 +10,10 @@ def home(request):
     return render(request, 'home.html', {})
 
 
+def land(request):
+    return render(request, 'landing.html', {})
+
+
 def index(request):
     title = "Welcome guest"
     form = SignUpForm(request.POST or None)
