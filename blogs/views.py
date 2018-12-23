@@ -6,6 +6,7 @@ from django.conf import settings
 
 
 def home(request):
+    # return render(request, 'base.html', {})
     return render(request, 'home.html', {})
 
 
@@ -28,7 +29,8 @@ def index(request):
         context = {
             'title': 'Thank for Registeration',
         }
-    return render(request, 'index.html', context)
+    return render(request, 'base.html', context)
+    # return render(request, 'index.html', context)
 
 
 def contact(request):
