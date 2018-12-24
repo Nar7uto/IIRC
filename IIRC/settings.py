@@ -26,11 +26,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'email@gmail.com'
-EMAIL_HOST_PASSWORD = 'pass'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_HOST_USER = 'project.farabi@yandex.com'
+EMAIL_HOST_PASSWORD = '123456778'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
 # Application definition
 

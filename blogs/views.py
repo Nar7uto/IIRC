@@ -7,7 +7,7 @@ from django.conf import settings
 
 def home(request):
     # return render(request, 'base.html', {})
-    return render(request, 'home.html', {})
+    return render(request, 'homenew.html', {})
 
 
 def land(request):
@@ -46,7 +46,7 @@ def contact(request):
 
         subject = 'Mail from Django'
         from_email = settings.EMAIL_HOST_USER
-        to_email = [from_email]
+        to_email = [from_email, 'hasanshah5882@gmail.com']
         contact_message = '%s: %s via %s'%(
             form_fullname,
             form_message,
