@@ -1,16 +1,21 @@
 {% extends "homenew.html" %}
-
-
+{% load crispy_forms_tags %}
 {% block content %}
-<p style="background-color:lightgreen"" >
+<p style="background-color:#00ffaa" >
 <br>
 <br>
 <br>
 <br>
-<form method="post" action="">{% csrf_token %}
-{{form.as_p}}
-<input type="submit" value="Submit">
-</form>
+
 </p>
+  <div class="row">
+    <div class="col-md-4">
+           <form method="post" action="">{% csrf_token %}
+        {{form|crispy}}
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+    </div>
+  </div>
+
 {% endblock %}
 

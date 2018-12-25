@@ -4,8 +4,8 @@ from .models import SignUp
 
 class ContactForm(forms.Form):
 	fullname = forms.CharField(required=False)
-	email = forms.EmailField(required=False)
-	message = forms.CharField(required=False)
+	email = forms.EmailField(required=True)
+	message = forms.CharField(required=True)
 
 
 class SignUpForm(forms.ModelForm):
